@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/Body.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<title>Activity Logging Website</title>
+
+<div class="spacing-Body"></div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-4">
+                <h1>Activity Logs</h1>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-outline-primary" onclick="location.href = '/NewPost'">Post New
+                    Log!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing-Body"></div>
+    
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="col1">
+                        <p1>No.</p1>
+                    </th>
+                    <th scope="col" class="col2">
+                        <p1>Title</p1>
+                    </th>
+                    <th scope="col" class="col3">
+                        <p1>Summary</p1>
+                    </th>
+                    <th scope="col" class="col4">
+                        <p1>Content</p1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <% i=0 %>
+                    <% if (blogs.length>0){ %>
+                        <% blogs.forEach(blog=>{ %>
+                            <% i+=1 %>
+                                <tr>
+                                    <th scope="row" class="col1">
+                                        <%=i%><br>
+    
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                onclick="location.href = '/deleteOne/<%=blog.id%>'">
+                                                Del</button>
+                                    </th>
+                                    <td class="col2">
+                                        <p1>
+                                            <%= blog.Title %>
+                                        </p1>
+    
+                                    </td>
+                                    <td class="col3">
+                                        <p1>
+                                            <%= blog.Summary %>
+                                        </p1>
+    
+                                    </td>
+                                    <td class="col4">
+                                        <p1>
+                                            <%= blog.Content %>
+                                        </p1>
+    
+                                    </td>
+                                </tr>
+                                <% }) %>
+                                    <% }else{ %>
+                                        <% } %>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</html>

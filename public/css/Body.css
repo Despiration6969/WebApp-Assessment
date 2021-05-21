@@ -1,0 +1,124 @@
+*{font-family: cursive;}
+
+h1{
+    color: black;   
+    font-size: 50;
+    text-align: center;
+    font-weight: bold !important;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    clear: both;
+  }
+
+  .table{
+      background-color: lightblue;
+  }
+
+
+
+p1, p3, p4, p5, p6 {
+  
+  font: size 10px;
+}
+
+html{
+    background-color: lightblue !important; 
+}
+
+div{
+    background-color: lightblue !important; 
+}
+
+body{
+    background-color: lightblue !important;
+}
+.container{
+    
+    outline: black;
+    border-style: solid;
+    border-color: black !important;
+}
+.content{
+    text-align:left !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.col1{
+
+    width:5%;
+    text-align: center;
+
+
+}
+.col2{
+
+    width:15%;
+
+}
+.col3{
+
+    width: 30%;
+
+}
+.col4{
+
+    width:50%;
+
+}
+
+.btn-outline-primary{
+    margin-left: 150px;
+    margin-top:10px;
+    clear:both;
+    float:right;
+    
+    font-style: italic !important;
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.btn-outline-secondary{
+    
+    font-size: 15px !important;
+    border-radius: 200px !important;
+    padding: 5px 5px !important;
+    border-color: rgb(0, 0, 0);
+    font-weight:bold;
+    border-width: 4px !important;
+}
+
+
+
+.spacing-Body{
+
+    height:20px;
+    background-color: lightblue;
+
+}
+
+.spacing-NewPost{
+    height:10px;
+    background-color: lightblue;
+}
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
